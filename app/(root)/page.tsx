@@ -1,5 +1,10 @@
+import SearchForm from "@/components/SearchForm";
 
-export default function Home() {
+export default async function Home({searchParams}:{
+    searchParams:Promise<{Startup?:string}>
+}) {
+
+    const Startup = (await searchParams).Startup ;
   return (
    <>
        <section className='pink_container'>
@@ -10,6 +15,7 @@ export default function Home() {
                     Submit your startup to the largest community of enterpreneurs and investors and
                    Get Noticed in virtual Competitions.
               </p>
+           <SearchForm Startup={Startup}/>
        </section>
 
    </>
