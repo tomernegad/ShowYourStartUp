@@ -29,3 +29,8 @@ export const STARTUP_BY_ID_QUERY =
    pitch,
    author->{_id,name,username,image,bio}
 }`);
+
+export const STARTUP_VIEW_QUERY =
+  defineQuery(`*[_type =="startup" && _id == $id][0]
+{_id, views}
+`);
