@@ -12,10 +12,6 @@
     "typegen": "sanity schema extract --path=./sanity/extract.json && sanity typegen generate"
   },
   "packageManager": "npm@10.5.2",
-  "overrides": {
-    "react": "$react",
-    "react-dom": "$react-dom"
-  },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.1",
     "@sanity/image-url": "^1.1.0",
@@ -23,12 +19,13 @@
     "@tailwindcss/typography": "^0.5.15",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "easymde": "^2.18.0",
     "lucide-react": "^0.469.0",
     "next": "^15.2.0-canary.5",
     "next-auth": "^5.0.0-beta.25",
     "next-sanity": "^9.8.29-canary.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "sanity": "^3.69.0",
     "sanity-plugin-markdown": "^5.0.0",
     "server-only": "^0.0.1",
